@@ -25,7 +25,8 @@ public class HibernateDemo {
         Map<String, String> params = new HashMap<>();
 //        params.put("q", "iPhone");
 //        params.put("fromPrice", "28000000");
-        params.put("cateId", "2");
+//        params.put("cateId", "2");
+        params.put("page", "1");
 
         ProductRepositoryImpl s = new ProductRepositoryImpl();
         s.getProducts(params).forEach(p -> System.out.printf("%s - %s \n", p.getName(), p.getPrice()));
