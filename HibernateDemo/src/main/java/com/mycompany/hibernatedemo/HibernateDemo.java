@@ -4,6 +4,7 @@
  */
 package com.mycompany.hibernatedemo;
 
+import com.ntt.pojo.Product;
 import com.ntt.repository.impl.CategoryRepositoryImpl;
 import com.ntt.repository.impl.ProductRepositoryImpl;
 import java.util.HashMap;
@@ -29,6 +30,6 @@ public class HibernateDemo {
         params.put("page", "1");
 
         ProductRepositoryImpl s = new ProductRepositoryImpl();
-        s.getProducts(params).forEach(p -> System.out.printf("%s - %s \n", p.getName(), p.getPrice()));
+        s.getProducts(params).forEach(p -> System.out.printf("%s\n", p.getName()));
     }
 }
