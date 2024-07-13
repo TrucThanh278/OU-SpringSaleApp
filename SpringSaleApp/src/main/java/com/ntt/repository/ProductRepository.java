@@ -4,10 +4,19 @@
  */
 package com.ntt.repository;
 
+import com.ntt.pojo.Product;
+import java.util.List;
+import java.util.Map;
+
 /**
  *
  * @author admin
  */
 public interface ProductRepository {
-    
+
+    public List<Product> getProducts(Map<String, String> params);
+
+    public void addOrUpdate(Product p);
+
+    public Product getProductById(int id);
 }

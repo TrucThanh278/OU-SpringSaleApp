@@ -4,10 +4,13 @@
  */
 package com.ntt.service;
 
+import com.ntt.pojo.Category;
+import java.util.List;
+
 /**
  *
  * @author admin
  */
 public interface CategoryService {
-    
+    public List<Category> getCates();
 }
